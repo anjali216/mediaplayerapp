@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { Link } from 'react-router-dom'
+import { FaFastBackward } from "react-icons/fa";
+import { RiDeleteBinLine } from "react-icons/ri";
 //import { deleteHistoryAPI, getHistoryAPI } from '../Services/AllAPIs'
 
 
@@ -37,7 +39,7 @@ function WatchHistory() {
         </Col>
         <Col className='me-3'>
         <Link to={'/'}>
-        <h5 style={{float:'right'}}>Back to Home <i className="fa-solid fa-backward fs-3"></i></h5> 
+        <h5 style={{float:'right'}}>Back to Home <FaFastBackward /></h5> 
         </Link>
         </Col>
       </Row>
@@ -55,19 +57,17 @@ function WatchHistory() {
       </thead>
       <tbody>
        
+      
           <tr className='border border-white'>
           <td className='border border-white text-center'>1</td>
-          <td className='border border-white text-center'>anjali</td>
-          <td className='border border-white '>link</td>
-          <td className='border border-white text-center'>action</td>
+          <td className='border border-white text-center'>item</td>
+          <td className='border border-white '>embedLink</td>
+          <td className='border border-white text-center'>timestamp</td>
           <td className='border border-white text-center'>
-            <i  className='btn btn-danger  fa-solid fa-trash text-white m-3' ></i>
+            <i  className='btn btn-danger  fa-solid fa-trash text-white m-3' > <RiDeleteBinLine /> </i>
           </td>
         </tr>
         
-
-      
-       
  
       </tbody>
     </table>

@@ -6,7 +6,7 @@ import { Row,Col } from 'react-bootstrap'
 function ViewVideo() {
   return (
     <div>
-    <Row>
+    <Row  className='p-5'>
      <Col>
      <VideoCard/>
      </Col>
